@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from "@angular/common/http";
 import {ProductListComponentModule} from "./components/product-list/product-list.component-module";
 import {CategoriesComponentModule} from "./components/categories/categories.component-module";
+import {CryptoComponentModule} from "./components/crypto/crypto.component-module";
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import {CategoriesComponentModule} from "./components/categories/categories.comp
     BrowserAnimationsModule,
     HttpClientModule,
     ProductListComponentModule,
-    CategoriesComponentModule
+    CategoriesComponentModule,
+    CryptoComponentModule
   ],
   providers: [],
   bootstrap: [AppComponent]
