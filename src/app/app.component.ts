@@ -8,3 +8,4 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'ng-material-starter-kit-acms';
 }
+
