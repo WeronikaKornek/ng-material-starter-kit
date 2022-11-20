@@ -1,6 +1,16 @@
-<button mat-button [matMenuTriggerFor]="menu">Menu</button>
-<mat-menu #menu="matMenu">
-  <button mat-menu-item *ngFor="let item of list$ | async">
-  {{item}}
-</button>
-</mat-menu>
+<mat-card>
+  <mat-card-title></mat-card-title>
+  <mat-card-content>
+<mat-form-field appearance="fill">
+  <mat-label>Categories</mat-label>
+  <mat-select>
+    <mat-option *ngFor="let item of list$ | async" [value]="item">
+     {{item}}
+</mat-option>
+   </mat-select>
+</mat-form-field>
+  </mat-card-content>
+</mat-card>
+
+
+
