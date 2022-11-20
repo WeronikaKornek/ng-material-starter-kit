@@ -1,6 +1,6 @@
-import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
-import { LoginService } from '../../services/login.service';
+import {ChangeDetectionStrategy, Component, ViewEncapsulation} from '@angular/core';
+import {FormControl, FormGroup} from '@angular/forms';
+import {LoginService} from '../../services/login.service';
 
 @Component({
   selector: 'app-login',
