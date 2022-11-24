@@ -1,7 +1,7 @@
-import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/core';
-import { Observable } from 'rxjs';
-import { ProductModel } from '../../models/product.model';
-import { ProductsService } from '../../services/products.service';
+import {ChangeDetectionStrategy, Component, ViewEncapsulation} from '@angular/core';
+import {Observable} from 'rxjs';
+import {ProductModel} from '../../models/product.model';
+import {ProductsService} from '../../services/products.service';
 
 @Component({
   selector: 'app-product-list',
@@ -11,8 +11,10 @@ import { ProductsService } from '../../services/products.service';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ProductListComponent {
-  readonly list$: Observable<ProductModel[]> = this._productsService.getAll();
+  displayedColumns: string[] = ['image', 'title', 'category', 'price'];
 
-  constructor(private _productsService: ProductsService) {
+  dataSource: Observable<ProductModel[]> = this.service.getAll();
+
+  constructor(private service: ProductsService) {
   }
 }
