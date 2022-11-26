@@ -9,6 +9,7 @@ import {CategoriesComponentModule} from "./components/categories/categories.comp
 import {CryptoComponentModule} from "./components/crypto/crypto.component-module";
 import {ProductDetailComponentModule} from "./components/product-detail/product-detail.component-module";
 import {CatComponentModule} from "./components/cat/cat.component-module";
+import {AgeComponentModule} from "./components/age/age.component-module";
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import {CatComponentModule} from "./components/cat/cat.component-module";
     CategoriesComponentModule,
     CryptoComponentModule,
     ProductDetailComponentModule,
-    CatComponentModule
+    CatComponentModule,
+    AgeComponentModule
   ],
   providers: [],
   bootstrap: [AppComponent]
