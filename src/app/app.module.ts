@@ -1,13 +1,15 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HttpClientModule } from "@angular/common/http";
+import {AppRoutingModule} from './app-routing.module';
+import {AppComponent} from './app.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {HttpClientModule} from "@angular/common/http";
 import {ProductListComponentModule} from "./components/product-list/product-list.component-module";
 import {CategoriesComponentModule} from "./components/categories/categories.component-module";
 import {CryptoComponentModule} from "./components/crypto/crypto.component-module";
+import {ProductDetailComponentModule} from "./components/product-detail/product-detail.component-module";
+
 
 @NgModule({
   declarations: [
@@ -20,9 +22,11 @@ import {CryptoComponentModule} from "./components/crypto/crypto.component-module
     HttpClientModule,
     ProductListComponentModule,
     CategoriesComponentModule,
-    CryptoComponentModule
+    CryptoComponentModule,
+    ProductDetailComponentModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
