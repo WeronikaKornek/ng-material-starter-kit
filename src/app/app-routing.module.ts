@@ -13,6 +13,9 @@ import { RegisterComponent } from './components/register/register.component';
 import { ProductDetailComponent } from './components/product-detail/product-detail.component';
 import { CatComponent } from './components/cat/cat.component';
 import { AgeComponent } from './components/age/age.component';
+import { CartComponent } from './components/cart/cart.component';
+import { UserComponent } from './components/user/user.component';
+import { BoredComponent } from './components/bored/bored.component';
 import { CategoriesComponentModule } from './components/categories/categories.component-module';
 import { CategoriesServiceModule } from './services/categories.service-module';
 import { ProductListComponentModule } from './components/product-list/product-list.component-module';
@@ -36,9 +39,15 @@ import { CatComponentModule } from './components/cat/cat.component-module';
 import { CatServiceModule } from './services/cat.service-module';
 import { AgeComponentModule } from './components/age/age.component-module';
 import { AgeServiceModule } from './services/age.service-module';
+import { CartComponentModule } from './components/cart/cart.component-module';
+import { CartServiceModule } from './services/cart.service-module';
+import { UserComponentModule } from './components/user/user.component-module';
+import { UserServiceModule } from './services/user.service-module';
+import { BoredComponentModule } from './components/bored/bored.component-module';
+import { BoredServiceModule } from './services/bored.service-module';
 
 @NgModule({
-  imports: [RouterModule.forRoot([{ path: 'products-search', component: ProductListComponent }, { path: 'categories', component: CategoriesComponent }, { path: 'crypto', component: CryptoComponent }, { path: 'public-holidays', component: HolidaysComponent }, { path: 'checkbox-categories', component: CategoriesChecboxComponent }, { path: 'categories-menu', component: CategoriesMenuComponent }, { path: 'create-product', component: ProductFormComponent }, { path: 'create-employee', component: EmployeeComponent }, { path: 'login', component: LoginComponent }, { path: 'register', component: RegisterComponent }, { path: 'product/:id', component: ProductDetailComponent }, { path: 'cat-fact', component: CatComponent }, { path: 'age/:name', component: AgeComponent }]), CategoriesComponentModule, CategoriesServiceModule, ProductListComponentModule, ProductsServiceModule, CryptoComponentModule, CryptoServiceModule, HolidaysComponentModule, HolidaysServiceModule, CategoriesChecboxComponentModule, CategoriesMenuComponentModule, ProductFormComponentModule, CreateProductServiceModule, EmployeeComponentModule, EmployeeServiceModule, LoginComponentModule, LoginServiceModule, RegisterComponentModule, RegisterServiceModule, ProductDetailComponentModule, CatComponentModule, CatServiceModule, AgeComponentModule, AgeServiceModule],
+  imports: [RouterModule.forRoot([{ path: 'products-search', component: ProductListComponent }, { path: 'categories', component: CategoriesComponent }, { path: 'crypto', component: CryptoComponent }, { path: 'public-holidays', component: HolidaysComponent }, { path: 'checkbox-categories', component: CategoriesChecboxComponent }, { path: 'categories-menu', component: CategoriesMenuComponent }, { path: 'create-product', component: ProductFormComponent }, { path: 'create-employee', component: EmployeeComponent }, { path: 'login', component: LoginComponent }, { path: 'register', component: RegisterComponent }, { path: 'product/:id', component: ProductDetailComponent }, { path: 'cat-fact', component: CatComponent }, { path: 'age/:name', component: AgeComponent }, { path: 'cart/:id', component: CartComponent }, { path: 'user/:id', component: UserComponent }, { path: 'bored', component: BoredComponent }]), CategoriesComponentModule, CategoriesServiceModule, ProductListComponentModule, ProductsServiceModule, CryptoComponentModule, CryptoServiceModule, HolidaysComponentModule, HolidaysServiceModule, CategoriesChecboxComponentModule, CategoriesMenuComponentModule, ProductFormComponentModule, CreateProductServiceModule, EmployeeComponentModule, EmployeeServiceModule, LoginComponentModule, LoginServiceModule, RegisterComponentModule, RegisterServiceModule, ProductDetailComponentModule, CatComponentModule, CatServiceModule, AgeComponentModule, AgeServiceModule, CartComponentModule, CartServiceModule, UserComponentModule, UserServiceModule, BoredComponentModule, BoredServiceModule],
   exports: [RouterModule]
 })
 export class AppRoutingModule {
