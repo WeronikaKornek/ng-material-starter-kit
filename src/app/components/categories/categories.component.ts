@@ -1,7 +1,6 @@
-import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/core';
-import { Observable } from 'rxjs';
-import { ProductModel } from '../../models/product.model';
-import { CategoriesService } from '../../services/categories.service';
+import {ChangeDetectionStrategy, Component, ViewEncapsulation} from '@angular/core';
+import {Observable} from 'rxjs';
+import {CategoriesService} from '../../services/categories.service';
 
 @Component({
   selector: 'app-categories',
@@ -12,6 +11,7 @@ import { CategoriesService } from '../../services/categories.service';
 })
 export class CategoriesComponent {
   readonly list$: Observable<string[]> = this._categoriesService.getAll();
+
   constructor(private _categoriesService: CategoriesService) {
   }
 }

@@ -1,6 +1,5 @@
 import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
-
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
@@ -9,7 +8,7 @@ import {ProductListComponentModule} from "./components/product-list/product-list
 import {CategoriesComponentModule} from "./components/categories/categories.component-module";
 import {CryptoComponentModule} from "./components/crypto/crypto.component-module";
 import {ProductDetailComponentModule} from "./components/product-detail/product-detail.component-module";
-
+import {CatComponentModule} from "./components/cat/cat.component-module";
 
 @NgModule({
   declarations: [
@@ -23,7 +22,8 @@ import {ProductDetailComponentModule} from "./components/product-detail/product-
     ProductListComponentModule,
     CategoriesComponentModule,
     CryptoComponentModule,
-    ProductDetailComponentModule
+    ProductDetailComponentModule,
+    CatComponentModule
   ],
   providers: [],
   bootstrap: [AppComponent]
